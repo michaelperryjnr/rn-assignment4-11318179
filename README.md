@@ -81,4 +81,9 @@ This exports the default components in the `components` folder to make the impor
 
 ## App Screenshot
 
-<img src="./assets/images/Screenshot.jpg">
+<img src="./assets/images/Screenshot_2024-Login.jpg">
+
+## App Screenshot
+
+<img src="./assets/images/Screenshot_2024-HomePage.jpg">
+
