@@ -35,7 +35,7 @@ export default function App() {
           <CustomButton
             title={"Log In"}
             textStyles={"text-white"}
-            handlePress={() => router.push("/home")}
+            handlePress={() => router.push("/home-page")}
           />
         </View>
         <View className="flex flex-row items-center justify-center mt-10 mb-5">
@@ -52,7 +52,7 @@ export default function App() {
           Have an account?<Text className="text-blue-100">Register</Text>
         </Text>
       </View>
-      <StatusBar backgroundColor="#F7E9E8" style="auto" />
+      <StatusBar backgroundColor="#FFFFFF" style="auto" />
     </SafeAreaView>
   );
 }
