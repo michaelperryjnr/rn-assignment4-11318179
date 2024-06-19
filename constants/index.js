@@ -1,5 +1,16 @@
 import { beats, burgerKing, profile } from "./images";
+import { appleIcon, googleIcon, facebookIcon, search, slider } from "./icons";
 
-import { appleIcon, googleIcon, facebookIcon } from "./icons";
+export const icons = {
+  appleIcon,
+  googleIcon,
+  facebookIcon,
+  search,
+  slider,
+};
 
-export { appleIcon, googleIcon, facebookIcon, beats, burgerKing, profile };
+export const images = {
+  beats,
+  burgerKing,
+  profile,
+};
