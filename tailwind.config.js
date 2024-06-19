@@ -21,6 +21,12 @@ module.exports = {
         blue: {
           100: "#356899",
         },
+        cardBg1: {
+          DEFAULT: "#5386E4",
+        },
+        cardBg2: {
+          DEFAULT: "#04284A",
+        },
       },
     },
   },
