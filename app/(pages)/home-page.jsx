@@ -21,7 +21,7 @@ const jobData = [
     role: "Software Engineer",
     salary: "$180,000",
     location: "Accra, Ghana",
-    image: icons.facebookIcon,
+    image: icons.googleIcon,
     bgColor: "bg-cardBg2",
   },
 ];
@@ -82,7 +82,7 @@ export default function HomePage() {
         </View>
         <FlatList
           data={jobData}
-          renderItem={({ item }) => {
+          renderItem={({ item }) => (
             <JobCard
               role={item.role}
               company={item.company}
@@ -90,27 +90,29 @@ export default function HomePage() {
               location={item.location}
               bgColor={item.bgColor}
               image={item.image}
-            />;
-          }}
+            />
+          )}
           keyExtractor={(item) => item.id.toString()}
           horizontal
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{ paddingRight: 16 }}
         />
-        <View className="px-3 flex flex-row justify-between items-center mt-6">
+        <View className="px-3 flex flex-row justify-between items-center mt-6 mb-6">
           <Text className="font-bold text-xl">Popular Jobs</Text>
           <Text className="font-medium text-gray-600 text-xl">See all</Text>
         </View>
-        <SectionList 
-        sections={[{title: "Job Offers", data: jobOffers}]}
-        keyExtractor={(item, index) => item + index}
-        renderItem={(item) => <JobOffer
-          image={item.image}
-          position={item.position}
-          company={item.company}
-          salary={item.salary}
-          location={item.location}
-          />}
+        <SectionList
+          sections={[{ title: "Job Offers", data: jobOffers }]}
+          keyExtractor={(item, index) => item + index}
+          renderItem={({ item }) => (
+            <JobOffer
+              image={item.image}
+              position={item.position}
+              company={item.company}
+              salary={item.salary}
+              location={item.location}
+            />
+          )}
         />
       </View>
       <StatusBar backgroundColor="#FFFFFF" style="auto" />

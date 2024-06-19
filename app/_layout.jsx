@@ -1,6 +1,6 @@
 import { Stack, SplashScreen } from "expo-router";
 
-SplashScreen.preventAutoHideAsync();
+// SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
   return (
